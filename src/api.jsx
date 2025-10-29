@@ -1,10 +1,11 @@
 import axios from "axios";
 
+// Use environment variable for the backend URL
 const API = axios.create({
-  baseURL: "http://localhost:5200/api", // backend API URL
+  baseURL: "https://invo-backend.onrender.com/api", 
 });
 
-// attach token automatically if present
+// Attach token automatically if present
 API.interceptors.request.use((req) => {
   const token = localStorage.getItem("token");
   if (token) {

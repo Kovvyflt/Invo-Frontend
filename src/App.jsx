@@ -6,7 +6,6 @@ import { Toaster } from "react-hot-toast";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import AdminHome from "./pages/AdminHome";
-import ManagerHome from "./pages/ManagerHome";
 import StaffHome from "./pages/StaffHome";
 import InventoryList from "./pages/InventoryList";
 import MakeSalesPage from "./pages/MakeSalesPage";
@@ -39,14 +38,6 @@ function App() {
           element={
             <ProtectedRoute roles={["admin"]}>
               <AdminHome />
-            </ProtectedRoute>
-          }
-        />
-        <Route
-          path="/manager"
-          element={
-            <ProtectedRoute roles={["manager"]}>
-              <ManagerHome />
             </ProtectedRoute>
           }
         />
