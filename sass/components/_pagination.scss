@@ -1,0 +1,25 @@
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    
+    button {
+      background: blue;
+      color: white;
+      border: none;
+      padding: 5px 12px;
+      border-radius: 5px;
+      cursor: pointer;
+  
+      &:disabled {
+        background: #ccc;
+        cursor: not-allowed;
+      }
+    }
+  
+    span {
+      font-size: 14px;
+      color: #fff;
+    }
+  }
+  

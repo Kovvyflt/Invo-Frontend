@@ -1,0 +1,24 @@
+.search{
+    &--bar {
+        width: 80%;
+        padding: 1rem 1.5rem;
+        border: 2px solid #d1d5db; // soft gray
+        border-radius: 2rem;
+        background: #47494b; // subtle background
+        color: #1f1f1f; // dark gray text
+        font-size: 1rem;
+        outline: none;
+        transition: all 0.2s ease;
+    
+        &::placeholder {
+          color: #1b1c1d; // lighter placeholder
+          font-style: italic;
+        }
+    
+        &:focus {
+          border-color: #3b82f6; // blue highlight
+          background: #fff;
+          box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3); // glowing ring
+        }
+      }
+}

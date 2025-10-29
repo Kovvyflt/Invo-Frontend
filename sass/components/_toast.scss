@@ -1,0 +1,37 @@
+.custom-toast {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 16px;
+  background: #ffffff;
+  border-left: 5px solid;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  color: #1f2937;
+  font-weight: 500;
+  min-width: 240px;
+  transition: all 0.2s ease;
+
+  .icon {
+    display: flex;
+    align-items: center;
+  }
+
+  &.success {
+    border-color: #22c55e; // green
+    .icon {
+      color: #22c55e;
+    }
+  }
+
+  &.error {
+    border-color: #ef4444; // red
+    .icon {
+      color: #ef4444;
+    }
+  }
+
+  &:hover {
+    transform: translateY(-2px);
+  }
+}

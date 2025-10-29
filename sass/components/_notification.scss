@@ -1,0 +1,53 @@
+.notification-count {
+  position: absolute;
+  bottom: -2px;
+  right: -6px;
+  background: red;
+  color: white;
+  font-size: 1rem;
+  padding: 2px 6px;
+  border-radius: 50%;
+}
+
+.notification-dropdown {
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  width: 300px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  padding: 10px;
+  z-index: 50;
+}
+
+.notification-dropdown h4 {
+  margin-bottom: 10px;
+}
+
+.notification-dropdown ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.notification-dropdown li {
+  padding: 8px;
+  border-bottom: 1px solid #eee;
+}
+
+.notification-dropdown li.unread {
+  background-color: #f9f9f9;
+  font-weight: 600;
+}
+
+.mark-read-btn {
+  margin-top: 5px;
+  font-size: 0.8rem;
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}

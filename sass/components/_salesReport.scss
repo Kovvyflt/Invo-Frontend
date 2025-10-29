@@ -1,0 +1,136 @@
+.sales{
+    &--report{
+        grid-row: 2 / span 6;
+        grid-column: 1 / span 7;
+
+        &__filter{
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+
+            select,button {
+                    background: #27272a;
+                    color: #f3f4f6;
+                    border: 1px solid #3f3f46;
+                    border-radius: 6px;
+                    padding: 1rem 1.75rem;
+                    font-size: 1.2rem;
+                    cursor: pointer;
+                    transition: all 0.2s ease;
+
+                    &:hover {
+                        border-color: #16a34a;      
+                    }
+                }
+
+                button {
+                    background: #16a34a;
+                    color: #fff;
+
+                    &:hover {
+                        background: #15803d;
+                    }
+                 }
+
+                &--custom{
+
+                    &__date{
+                        background-color: #2b2f36; // Dark background to match the dashboard
+                        border: 1px solid #3f444b;
+                        border-radius: 6px;
+                        color: #f5f5f5;
+                        padding: 1rem 1.75rem;
+                        margin: 0 8px;
+                        font-size: 0.95rem;
+                        outline: none;
+                        transition: all 0.2s ease-in-out;
+
+                         &:hover {
+                            border-color: #10b981; // green accent
+                        }
+
+                        &:focus {
+                            border-color: #10b981;
+                            box-shadow: 0 0 5px rgba(16, 185, 129, 0.5);
+                        }
+
+                        &::-webkit-calendar-picker-indicator {
+                            filter: invert(1); // makes the calendar icon white for dark mode
+                            cursor: pointer;
+                        }
+                    }
+                }
+         }
+
+        &__summary{
+            display: flex;
+            justify-content: space-between;
+            margin: 1rem 0rem;
+            background: #232325;
+            padding: 1rem 1.5rem;
+            border-radius: 10px;
+
+            p{
+                 color: #9ca3af;
+                  &:nth-child(4){      
+                    color: #22c55e;
+                    font-weight: 600;
+                }
+            }   
+        }
+
+        &__table{
+            width: 100%;
+            border-collapse: collapse;
+            overflow: hidden;
+            border-radius: 10px;
+            background: #1e1e21;
+
+          &--wrapper{
+            width: 100%;
+              thead {
+                background: #2a2a2d;
+                    th {
+                    color: #9ca3af;
+                    font-weight: 500;
+                    padding: 12px 14px;
+                    text-align: left;
+                    border-bottom: 1px solid #3f3f46;
+                    }
+            }
+
+            tbody {
+                tr {
+                transition: background 0.2s ease;
+
+                &:nth-child(even) {
+                    background: #232325;
+                }
+
+                &:hover {
+                    background: #2f2f33;
+                }
+
+                td {
+                    padding: 10px 14px;
+                    border-bottom: 1px solid #2f2f33;
+                    font-size: 1.4rem;
+                    color: #e5e7eb;
+
+                    &:nth-child(4),
+                    &:nth-child(5) {
+                    text-align: center;
+                    }
+
+                    &:nth-child(6) {
+                    color: #22c55e;
+                    font-weight: 600;
+                    }
+                }
+            }
+          }
+        }
+
+        }
+    }
+}

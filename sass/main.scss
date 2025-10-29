@@ -1,0 +1,33 @@
+// src/sass/main.scss
+
+
+//Abstract
+@import "./abstract/mixins";
+@import "./abstract/reset";
+// Base
+@import "./base/base";
+@import "./base/typography";
+@import "./base/variables";
+
+
+// Components
+@import "./components/btn";
+@import "./components/dashboard";
+@import "./components/mobileCart";
+@import "./components/modal";
+@import "./components/navbar";
+@import "./components/notification";
+@import "./components/pagination";
+@import "./components/products";
+@import "./components/searchbar";
+@import "./components/salesReport";
+@import "./components/staffSummary";
+@import "./components/toast";
+@import "./components/topnav";
+
+
+
+// Pages
+@import "./pages/login";
+@import "./pages/adminHome";
+@import "./pages/staffHome";

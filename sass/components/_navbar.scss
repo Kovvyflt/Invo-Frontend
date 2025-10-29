@@ -1,0 +1,41 @@
+.nav{
+    &--container{
+        height: 80vh;
+        display: flex; 
+        flex-direction: column;
+        justify-content: space-between;
+        
+    }
+
+    &--bar{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        list-style: none;
+        gap: 1rem;
+        height: 80%;
+    }
+
+    &--link{
+        cursor: pointer;
+        transition: all .2s;
+        padding: 1rem 0.5rem;
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+
+
+        &:hover {
+            transform: translateY(-4px);   // small slide
+            border-left: 2px solid var(--color-primary);
+            background-color:  rgba(240, 240, 240, 0.1);
+            backdrop-filter: blur(6px);
+            border-radius: 5px;
+        }
+
+        &__item{
+            color: gray;
+            text-decoration: none;
+        }
+    }
+}
