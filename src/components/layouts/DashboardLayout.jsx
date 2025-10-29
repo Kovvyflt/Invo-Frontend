@@ -24,7 +24,9 @@ export default function DashboardLayout({
       </div>
 
       <div className="grid--container">
-        <TopNavBar onMenuClick={toggleMenu} 
+        <TopNavBar 
+          onMenuClick={toggleMenu} 
+          isMenuOpen = {menuOpen}
           search={search}
           setSearch={setSearch}
         />

@@ -50,10 +50,12 @@
     }
 
     &--menu {
+
         display: none;
         cursor: pointer;
          @media only screen and (max-width: $bp-small) {
             display: flex;
+            z-index: 1000;
         }
 
     }

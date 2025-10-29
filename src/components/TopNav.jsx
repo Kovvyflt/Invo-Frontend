@@ -1,16 +1,17 @@
 import React, { useEffect, useState } from "react";
 import { CiBellOn } from "react-icons/ci";
-import { IoMenu } from "react-icons/io5";
+import { IoMenu,IoClose } from "react-icons/io5";
 import defaultAvatar from "../assets/avatar.jpg";
 import API from "../api";
 import { toast } from "react-hot-toast";
 import SearchBar from "./SearchBar";
 
-export default function TopNavBar({ onMenuClick, search, setSearch }) {
+export default function TopNavBar({ onMenuClick, search, setSearch, isMenuOpen }) {
   const [greeting, setGreeting] = useState("");
   const [userName, setUserName] = useState("");
   const [notifications, setNotifications] = useState([]);
   const [showDropdown, setShowDropdown] = useState(false);
+  
 
   // ✅ Fetch notifications
   const fetchNotifications = async () => {
@@ -117,7 +118,7 @@ export default function TopNavBar({ onMenuClick, search, setSearch }) {
 
         {/* Menu toggle */}
         <div className="topnav--menu" onClick={onMenuClick}>
-          <IoMenu size="2em" />
+          {isMenuOpen ? <IoClose size="2em" /> : <IoMenu size="2em" />}
         </div>
       </div>
     </div>
