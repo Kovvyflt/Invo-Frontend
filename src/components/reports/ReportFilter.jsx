@@ -76,7 +76,7 @@ export default function ReportFilter({ filter, setFilter, onFetch, isStaff }) {
             <option value="">All Staff</option>
             {staffList.map((staff) => (
               <option key={staff._id} value={staff._id}>
-                {staff.name}
+                {staff.firstName}
               </option>
             ))}
           </select>

@@ -473,7 +473,7 @@ body {
   top: 60px;
   right: 20px;
   width: 300px;
-  background: #fff;
+  background-color: #161616;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
   padding: 10px;
@@ -1102,6 +1102,7 @@ body {
   background: rgba(255, 255, 255, 0.03);
   border-right: 1px solid rgba(255, 255, 255, 0.05);
   padding: 2rem 1rem;
+  transition: all 0.2s ease-in;
 }
 @media only screen and (max-width: 68.75em) {
   .adminHome--container {
@@ -1116,6 +1117,7 @@ body {
   width: 220px;
   z-index: 100;
   background: rgba(0, 0, 0, 0.9);
+  transition: all 0.2s ease-in;
 }
 
 .grid--container {

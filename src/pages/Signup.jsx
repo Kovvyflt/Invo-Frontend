@@ -131,7 +131,6 @@ export default function Signup() {
             className="login--input"
           >
             <option value="staff">Staff</option>
-            <option value="manager">Manager</option>
           </select>
 
           <button type="submit" className="btn--login">

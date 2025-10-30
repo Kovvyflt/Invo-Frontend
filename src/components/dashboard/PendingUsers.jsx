@@ -86,8 +86,6 @@ export default function PendingUsers() {
 
   return (
     <div className="dashboard--card dashboard--card__users">
-      <Toaster position="top-right" reverseOrder={false} />
-
       <h3 className="heading--3">👥 Pending User Approvals</h3>
 
       {loading ? (
