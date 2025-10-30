@@ -44,7 +44,7 @@ export default function TopStaff() {
           className="select--option"
         >
           <option value="weekly">Last 7 Days</option>
-          <option value="monthly">This Month</option>
+          <option value="monthly">Last 30 Days</option>
           <option value="yearly">This Year</option>
         </select>
       </div>
