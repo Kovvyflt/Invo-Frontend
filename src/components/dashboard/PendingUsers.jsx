@@ -97,14 +97,14 @@ export default function PendingUsers() {
           {pendingUsers.map((u) => (
             <li key={u._id} className="user--item">
               <div>
-                <strong>{u.name}</strong> <span>({u.email})</span>
+                <strong>{u.firstName}</strong> <span>({u.email})</span>
                 <p>Role: {u.role}</p>
               </div>
               <div className="user--actions">
                 <button
                   onClick={() =>
                     confirmAndExecute(
-                      `Are you sure you want to approve ${u.name}?`,
+                      `Are you sure you want to approve ${u.firstName}?`,
                       () => handleApprove(u._id)
                     )
                   }
@@ -115,7 +115,7 @@ export default function PendingUsers() {
                 <button
                   onClick={() =>
                     confirmAndExecute(
-                      `Are you sure you want to delete ${u.name}?`,
+                      `Are you sure you want to delete ${u.firstName}?`,
                       () => handleDelete(u._id)
                     )
                   }
