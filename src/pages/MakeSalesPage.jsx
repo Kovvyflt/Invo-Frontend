@@ -21,6 +21,10 @@ export default function MakeSalesPage() {
   const [currentPage, setCurrentPage] = useState(1);
   const [totalPages, setTotalPages] = useState(1);
   const pageSize = 10;
+  const role = localStorage.getItem("role");
+  const isAdmin = role === "admin";
+  const isManager = role === "manager";
+  const canEdit = isAdmin || isManager;
 
   useEffect(() => {
     const fetchProducts = async () => {
@@ -136,6 +140,7 @@ export default function MakeSalesPage() {
     <DashboardLayout
       title="Make Sales"
       showAddModal={showAddModal}
+      onAddProduct={canEdit ? () => setShowAddModal(true) : null}
       setShowAddModal={setShowAddModal}
       search={search}
       setSearch={setSearch}

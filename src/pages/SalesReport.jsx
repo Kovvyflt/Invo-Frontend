@@ -19,6 +19,9 @@ export default function SalesReport() {
   const role = localStorage.getItem("role");
   const userId = localStorage.getItem("userId");
   const isStaff = role === "staff";
+  const isAdmin = role === "admin";
+  const isManager = role === "manager";
+  const canEdit = isAdmin || isManager;
 
   // 🔹 Fetch Sales Report
   const fetchSales = async (query = "") => {
@@ -42,6 +45,7 @@ export default function SalesReport() {
   return (
     <DashboardLayout
           title="Make Sales"
+          onAddProduct={canEdit ? () => setShowAddModal(true) : null}
           showAddModal={showAddModal}
           setShowAddModal={setShowAddModal}
         >

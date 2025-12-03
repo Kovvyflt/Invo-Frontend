@@ -496,7 +496,7 @@ body {
 }
 
 .notification-dropdown li.unread {
-  background-color: #f9f9f9;
+  background-color: gray;
   font-weight: 600;
 }
 
@@ -949,7 +949,7 @@ body {
   height: 5rem;
   padding: 1rem;
 }
-@media only screen and (max-width: 37.5em) {
+@media only screen and (max-width: 68.75em) {
   .topnav {
     grid-row: auto;
     grid-column: 1/span 6;
@@ -960,7 +960,7 @@ body {
   font-size: 1.7rem;
   font-weight: 300;
 }
-@media only screen and (max-width: 37.5em) {
+@media only screen and (max-width: 68.75em) {
   .topnav--left {
     font-size: 1.5rem;
   }
@@ -992,7 +992,7 @@ body {
   display: none;
   cursor: pointer;
 }
-@media only screen and (max-width: 37.5em) {
+@media only screen and (max-width: 68.75em) {
   .topnav--menu {
     display: flex;
     z-index: 1000;

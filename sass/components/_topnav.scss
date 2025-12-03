@@ -6,7 +6,7 @@
     height: 5rem;
     padding: 1rem;
 
-     @media only screen and (max-width: $bp-small) {
+     @media only screen and (max-width: $bp-large) {
         grid-row: auto;
         grid-column: 1 / span 6;
     }
@@ -16,7 +16,7 @@
         font-size: 1.7rem;
         font-weight: 300;
 
-         @media only screen and (max-width: $bp-small) {
+         @media only screen and (max-width: $bp-large) {
             font-size: 1.5rem;
         }
     }
@@ -53,7 +53,7 @@
 
         display: none;
         cursor: pointer;
-         @media only screen and (max-width: $bp-small) {
+         @media only screen and (max-width: $bp-large) {
             display: flex;
             z-index: 1000;
         }

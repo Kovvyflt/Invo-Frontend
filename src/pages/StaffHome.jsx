@@ -18,7 +18,6 @@ export default function StaffHome() {
   return (
     <DashboardLayout
       title="Staff Dashboard"
-      onAddProduct={() => setShowAddModal(false)}
       onLogout={handleLogout}
       showAddModal={showAddModal}
       setShowAddModal={setShowAddModal}
